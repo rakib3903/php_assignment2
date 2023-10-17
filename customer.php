@@ -34,6 +34,15 @@
         public function addEmail(string $email){
             $this->email = $email;
         }
+        public function __get($name){
+            return $this->id;
+        }
+        public function __set($name, $value){
+            $this->payment = $value;
+        }
+        public function __call($name, $argument){
+            echo  implode(' ', $argument);
+        }
     }
 
 ?>

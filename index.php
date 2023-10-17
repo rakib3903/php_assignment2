@@ -14,7 +14,12 @@
         echo $book->getTitle();
 
         $customer = new Customer(43, "Md Rakib", "Hossain", "rakibb165@gmail.com");
-        echo "<br>".$customer->getId();
+        echo "<br>".$customer->getId()."<br>";
+        
+        echo $customer->unknown.'<br>';
+        $customer->payment = 150;
+        echo $customer->payment.'<br>';
+        $customer->rakib('unkonwn', 'function', 'is called');
             
     ?>
 </body>
