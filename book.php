@@ -20,10 +20,10 @@
             return $this->isbn;
         }
         public function getTitle():string{
-            return $this->isbn;
+            return $this->title;
         }
         public function getAuthor():string{
-            return $this->isbn;
+            return $this->author;
         }
         public function getAvailable():int{
             return $this->available;
